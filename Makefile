@@ -7,7 +7,7 @@ FLG =		-Wall -Wextra -Werror
 INC =		-I./inc/ -lSDL2
 
 SRC_DIR =	src/
-SRC_FIL =	main.cpp class_engine.cpp
+SRC_FIL =	main.cpp class_engine.cpp class_window.cpp
 
 OBJ_DIR =	obj/
 OBJ_FIL =	$(SRC_FIL:.cpp=.o)
@@ -26,7 +26,7 @@ $(NAME):
 	@mv $(OBJ_FIL) $(OBJ_DIR)
 	@echo -ne "Creating objects => Compiling...\\r"
 	@$(CC) $(OBJ) $(INC) -o $@
-	@echo -e "Creating objects => Compiling =>\033[32m Bomberman ready!"
+	@echo -e "Creating objects => Compiling =>\033[32m TicTacToe ready!"
 
 clean:
 	rm -f $(OBJ)
