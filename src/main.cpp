@@ -1,8 +1,8 @@
 #include "tictactoe.hpp"
+#include "class_engine.hpp"
 
 int			main(void)
 {
-	SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_EVENTS);
-	SDL_Quit();
+	class_engine	engine;
 	return (EXIT_SUCCESS);
 }

@@ -7,7 +7,7 @@ FLG =		-Wall -Wextra -Werror
 INC =		-I./inc/ -lSDL2
 
 SRC_DIR =	src/
-SRC_FIL =	main.cpp
+SRC_FIL =	main.cpp class_engine.cpp
 
 OBJ_DIR =	obj/
 OBJ_FIL =	$(SRC_FIL:.cpp=.o)
@@ -15,7 +15,7 @@ OBJ_FIL =	$(SRC_FIL:.cpp=.o)
 SRC =		$(addprefix $(SRC_DIR), $(SRC_FIL))
 OBJ =		$(addprefix $(OBJ_DIR), $(OBJ_FIL))
 
-GREEN =		'\033[0;32m'
+GREEN =		'\033[32m'
 
 all: $(NAME)
 
