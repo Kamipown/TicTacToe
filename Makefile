@@ -7,7 +7,7 @@ FLG =		-Wall -Wextra -Werror
 INC =		-I./inc/ -lSDL2
 
 SRC_DIR =	src/
-SRC_FIL =	main.cpp class_engine.cpp class_window.cpp
+SRC_FIL =	main.cpp class_engine.cpp class_window.cpp class_events.cpp
 
 OBJ_DIR =	obj/
 OBJ_FIL =	$(SRC_FIL:.cpp=.o)

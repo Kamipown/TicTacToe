@@ -5,7 +5,7 @@ using namespace std;
 class_window::class_window(void)
 {
 	this->window = SDL_CreateWindow("TicTacToe", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_W, SCREEN_H, 0);
-	if (this->window == NULL)
+	if (!this->window)
 	{
 		cout << "Window creation failed : " << SDL_GetError() << endl;
 		exit(EXIT_FAILURE);

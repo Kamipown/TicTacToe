@@ -9,4 +9,9 @@
 # define SCREEN_W 640
 # define SCREEN_H 480
 
+struct		s_inputs
+{
+	bool	escape;
+};
+
 #endif
